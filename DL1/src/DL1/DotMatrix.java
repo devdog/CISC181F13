@@ -17,7 +17,7 @@ public class DotMatrix {
 	    this.sequence1 = sequence1;
 	    this.sequence2 = sequence2;
 	    this.matrix= new boolean[sequence1.length][sequence2.length];
-	    for(int i=0; sequence1.length*sequence2.length>i; i++){
+	    for(int i=0; sequence1.length*sequence2.length>i-1; i++){
 	    	matrix[i/sequence2.length][i%sequence2.length]=sequence1[i/sequence2.length]==sequence2[i%sequence2.length];
 	    }
 	}
