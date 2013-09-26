@@ -68,7 +68,6 @@ public class DotMatrix {
 	 */
 	public int maxDiagonalAlignment() {
         // you must implement this method
-	    //hi
         return 0; // change this too!
     }
     
