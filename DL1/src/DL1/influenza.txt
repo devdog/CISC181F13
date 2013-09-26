@@ -1,0 +1,13 @@
+;sequence fragments from Genbank, http://www.ncbi.nlm.nih.gov/genbank/
+; the first 60 bases in each sequence
+;A/New York/7426/2009(H1N1)
+ttgaatggat gtcaatccga ctctactttt cctaaaaatt ccagcgcaaa atgccataag
+
+;A/Rome/689/2009(H1N1)
+taagaatcgg ttccaagggg gatgtgtttg tcataaggga accattcata tcatgctccc
+
+;A/Lipetsk/CRIE-BVV/2009(H1N1)
+atggatgtca atccgactct acttttccta aaaattccag cacaaaatgc cataagcacc
+
+;A/Guam/NHRC0001/2009(H1N1)
+taaagatgag tcttctaacc gaggtcgaaa cgtacgttct ttctatcatc ccgtcaggcc
