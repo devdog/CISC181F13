@@ -67,8 +67,35 @@ public class DotMatrix {
 	 * @return the max overall score
 	 */
 	public int maxDiagonalAlignment() {
-        // you must implement this method
-        return 0; // change this too!
+		int maxOverallScore = 0;
+
+        int maxScore = 0;
+
+        for (int row = 0; row < matrix.length; row++) {
+
+                        maxScore = diagonalMatchScore(row, 0);
+
+                        if (maxScore > maxOverallScore) {
+
+                                        maxOverallScore = maxScore;
+
+                        }
+
+        }
+
+        for (int col = 1; col < matrix[0].length; col++) {
+
+                        maxScore = diagonalMatchScore(0, col);
+
+                        if (maxScore > maxOverallScore) {
+
+                                        maxOverallScore = maxScore;
+
+                        }
+
+        }
+
+        return maxOverallScore;
     }
     
     /**

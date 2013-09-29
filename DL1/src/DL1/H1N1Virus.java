@@ -40,9 +40,29 @@ public class H1N1Virus {
      * @return
      */
     public H1N1Virus findClosestMatch(ArrayList<H1N1Virus> possibleSources) {
-        // you need to complete this method
-        
-        return null; // change this too!
+    	int score = 0; 
+
+        int maxScore = 0;
+
+        H1N1Virus closest = null;
+
+        for (H1N1Virus p : possibleSources) {
+
+                        DotMatrix dm = new DotMatrix(this.getSequence(), p.getSequence());
+
+                        score = dm.maxDiagonalAlignment();
+
+                        if (score > maxScore) {
+
+                                        maxScore = score;
+
+                                        closest = p;
+
+                        }
+
+        }
+
+        return closest;
     }
     
     /**
